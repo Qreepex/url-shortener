@@ -1,0 +1,26 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "🔗 URL Shortener for https://qrpx.link",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qreepex/url-shortener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qreepex/url-shortener/issues"
+  },
+  "homepage": "https://github.com/Qreepex/url-shortener#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  }
+}
