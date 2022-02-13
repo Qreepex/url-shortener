@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>URL Shortener</title>
+    </head>
+    <body>
+        <form action="/shorten" method="post">
+            <div>
+                <h1>URL zu kürzen</h1>
+                <input type="url" class="form-control" name="domain" id="domain" placeholder="https://google.com" required>
+            </div>
+            <br>
+            <div>
+                <h1>Code</h1>
+                <input type="text" class="form-control" name="code" id="code" placeholder="test">
+            </div>
+            <br>
+            <br>
+            <div>
+                <button type="submit">
+                    Bestätigen
+                </button>
+            </div>
+
+            <% if(code) { %>
+                <h2>Der Code ist: <a href="https://qrpx.link/<%= code %>">https://qrpx.link/<%= code %></a></h2>
+            <% } %>
+        </form>
+    </body>
+</html>
